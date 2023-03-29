@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zcoins/common/models/user/user.dart';
 import 'package:zcoins/common/models/wallet/z_coin_wallet.dart';
 import 'package:zcoins/constants/constants_export.dart';
@@ -51,6 +52,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     );
 
     await _authenticationRepository.saveUser(user: user);
+
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+
+    preferences.setBool(AppConstants.walletCreatedPreferencesKey, true);
 
     emit(const _WalletCreatedState());
   }

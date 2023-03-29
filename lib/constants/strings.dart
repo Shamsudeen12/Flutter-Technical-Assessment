@@ -3,6 +3,9 @@ class AppStrings {
 
   static const String next = 'Next';
 
+  static const String wallet = 'Wallet';
+  static const String transactions = 'Transactions';
+
   static const String dashboardCta = 'Go To My Dashboard';
   static const String createWalletCta = 'Create My Wallet';
   static const String walletCreated = 'Wallet Created Successfully';

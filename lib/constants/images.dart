@@ -7,4 +7,7 @@ class AppImages {
   static const shinyBg = 'assets/images/shiny_bg.png';
 
   static const completeAnimation = 'assets/anims/complete.json';
+
+  static const usdtAbi = 'assets/abi/usdt.json';
+  static const usdcAbi = 'assets/abi/usdc.json';
 }

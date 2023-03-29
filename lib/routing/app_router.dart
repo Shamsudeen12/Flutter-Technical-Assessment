@@ -1,8 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:zcoins/features/authentication/ui/signup/signup_screen.dart';
 import 'package:zcoins/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:zcoins/features/onboarding/ui/screens/wallet_created_screen.dart';
+import 'package:zcoins/features/wallet/ui/screens/main_screen.dart';
+import 'package:zcoins/features/wallet/ui/screens/transactions/transactions_screen.dart';
+import 'package:zcoins/features/wallet/ui/screens/wallet/wallet_screen.dart';
+import 'package:zcoins/routing/guards/login_route_guard.dart';
 
 part 'app_router.gr.dart';
 
@@ -12,13 +15,24 @@ part 'app_router.gr.dart';
     AutoRoute(
       page: OnboardingScreen,
       initial: true,
+      guards: [
+        LoginRouteGuard,
+      ],
     ),
     AutoRoute(
-      page: SignupScreen,
+      page: MainScreen,
+      children: [
+        AutoRoute(page: WalletScreen),
+        AutoRoute(page: TransactionsScreen),
+      ],
     ),
     AutoRoute(
       page: WalletCreatedScreen,
     ),
   ],
 )
-class AppRouter extends _$AppRouter {}
+class AppRouter extends _$AppRouter {
+  AppRouter({
+    required LoginRouteGuard loginRouteGuard,
+  }) : super(loginRouteGuard: loginRouteGuard);
+}

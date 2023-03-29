@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:zcoins/constants/constants_export.dart';
 import 'package:zcoins/routing/app_router.dart';
+import 'package:zcoins/routing/guards/login_route_guard.dart';
 import 'package:zcoins/utils/utils.dart';
 
 class ZCoinsApp extends StatelessWidget {
   ZCoinsApp({super.key});
 
-  final _appRouter = AppRouter();
+  final _appRouter = AppRouter(loginRouteGuard: LoginRouteGuard());
 
   @override
   Widget build(BuildContext context) {

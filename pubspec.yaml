@@ -34,6 +34,7 @@ dependencies:
   ed25519_hd_key: ^2.2.0
   hex: ^0.2.0
   lottie: ^2.3.1
+  http: ^0.13.5
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +57,7 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/anims/
+    - assets/abi/
 
   fonts:
     - family: SFProDisplay

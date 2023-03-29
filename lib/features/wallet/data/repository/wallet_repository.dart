@@ -6,4 +6,11 @@ abstract class WalletRepository {
   Future<String> getPrivateKey({required String mnemonic});
 
   Future<EthereumAddress> getPublicKey({required String key});
+
+  Future<double> getUsdtBalance();
+
+  Future<String?> sendUsdt({
+    required String recipientAddress,
+    required double amount,
+  });
 }

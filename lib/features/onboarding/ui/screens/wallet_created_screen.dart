@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:zcoins/common/widgets/buttons/primary_button.dart';
 import 'package:zcoins/constants/constants_export.dart';
+import 'package:zcoins/routing/app_router.dart';
 
 class WalletCreatedScreen extends StatelessWidget {
   const WalletCreatedScreen({Key? key}) : super(key: key);
@@ -29,7 +31,9 @@ class WalletCreatedScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppSizes.p20),
           PrimaryButton(
-            onPressed: () {},
+            onPressed: () {
+              context.pushRoute(const WalletRoute());
+            },
             padding: const EdgeInsets.symmetric(
               horizontal: AppSizes.p20,
               vertical: AppSizes.p14,

@@ -13,4 +13,13 @@ class AuthenticationRepositoryImpl extends AuthenticationRepository {
 
     box.put(AppConstants.user, user);
   }
+
+  @override
+  Future<User> getUser() async {
+    final Box<dynamic> box = await Hive.openBox<dynamic>(AppConstants.databaseBox);
+
+    User user = box.get(AppConstants.user);
+
+    return user;
+  }
 }
