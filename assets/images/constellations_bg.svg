@@ -1,0 +1,33 @@
+<svg width="471" height="488" viewBox="0 0 471 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<circle cx="30.4745" cy="338.243" r="1.20298" transform="rotate(-90 30.4745 338.243)" fill="#777777"/>
+<circle cx="1.20298" cy="381.951" r="1.20298" transform="rotate(-90 1.20298 381.951)" fill="#777777"/>
+<circle cx="50.5252" cy="331.426" r="1.20298" transform="rotate(-90 50.5252 331.426)" fill="#777777"/>
+<circle cx="6.81626" cy="322.203" r="1.20298" transform="rotate(-90 6.81626 322.203)" fill="#777777"/>
+<circle cx="50.9256" cy="351.476" r="1.20298" transform="rotate(-90 50.9256 351.476)" fill="#777777"/>
+<path d="M51.1267 331.627L30.6761 338.043M51.1267 331.627L6.61652 322.204M51.1267 331.627L51.1267 351.075L30.6761 338.043M30.6761 338.043L1.20312 381.751L6.61652 322.204M30.6761 338.043L6.61652 322.204" stroke="#777777" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.5">
+<path d="M365 108L396.5 139.5L417 110.5V56L365 108Z" stroke="#777777" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="418" cy="55" r="3" fill="#777777"/>
+<circle cx="396" cy="140" r="3" fill="#777777"/>
+<circle cx="418" cy="110" r="3" fill="#777777"/>
+<circle cx="365" cy="108" r="3" fill="#777777"/>
+</g>
+<g opacity="0.5">
+<path d="M421 378L468 405L410.689 424.98L421 486L374 459V405L421 378Z" stroke="#777777" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="421" cy="379" r="3" fill="#777777"/>
+<circle cx="468" cy="405" r="3" fill="#777777"/>
+<circle cx="412" cy="425" r="3" fill="#777777"/>
+<circle cx="421" cy="485" r="3" fill="#777777"/>
+<circle cx="374" cy="459" r="3" fill="#777777"/>
+<circle cx="374" cy="405" r="3" fill="#777777"/>
+</g>
+<g opacity="0.5">
+<circle cx="64.6629" cy="11.441" r="3" transform="rotate(40.9501 64.6629 11.441)" fill="#777777"/>
+<circle cx="61.4735" cy="36.4781" r="3" transform="rotate(40.9501 61.4735 36.4781)" fill="#777777"/>
+<circle cx="33.4149" cy="30.6666" r="3" transform="rotate(40.9501 33.4149 30.6666)" fill="#777777"/>
+<circle cx="18.8289" cy="74.941" r="3" transform="rotate(40.9501 18.8289 74.941)" fill="#777777"/>
+<path d="M34.1703 31.3225L64.6622 11.4417L61.8503 36.8059M34.1703 31.3225L61.8503 36.8059M34.1703 31.3225L18.2224 76.402L61.8503 36.8059" stroke="#777777" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
